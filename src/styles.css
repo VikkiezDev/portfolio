@@ -245,6 +245,12 @@ h1, h2 {
     }
 }
 
+/* Styling for Project Card Description */
+.project-card p {
+    margin-top: 10px; /* Add space above the description */
+    font-size: 14px; /* Adjust font size for description */
+    color: #666; /* A lighter color for description */
+}
 
 /* Certification Cards */
 #certification-list {
