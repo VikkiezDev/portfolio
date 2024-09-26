@@ -1,10 +1,3 @@
-// JavaScript to toggle the hamburger menu
-document.getElementById('hamburger-btn').addEventListener('click', function() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('active'); // Toggle the 'active' class
-});
-
-
 // Sample project data with image placeholders
 const projects = [
     {
