@@ -17,20 +17,26 @@ function createProjectCards() {
         const title = document.createElement('h3');
         title.textContent = project.title;
 
-        const tags = document.createElement('p');
-        tags.textContent = 'Tags: ' + project.tags.map(tag => `<span class="pill">${tag}</span>`).join(', ');
+        const tagsContainer = document.createElement('div'); // Create a container for tags
+        tagsContainer.classList.add('tags-container'); // Add a class for styling
 
-        const description = document.createElement('p');
-        description.textContent = project.description; // Add the description
+        project.tags.forEach(tag => {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('pill'); // Add class for styling
+            tagElement.textContent = tag; // Set tag text
+            tagsContainer.appendChild(tagElement); // Append the tag to the container
+        });
+
+        const description = document.createElement('p'); // Create a paragraph for the description
+        description.textContent = project.description; // Set the description text
 
         card.appendChild(title);
-        card.appendChild(tags);
+        card.appendChild(tagsContainer); // Append the tags container
         card.appendChild(description); // Append the description below the tags
 
         projectList.appendChild(card);
     });
 }
-
 
 // Filter projects based on search input
 document.getElementById('search-bar').addEventListener('input', (e) => {
