@@ -184,46 +184,29 @@ h1, h2 {
     border-color: #666; /* Slightly darker border on hover */
 }
 
+/* Project Card Styling */
 .project-card {
     background-color: #f4f4f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+    text-align: center; /* Center align the text */
 }
 
-.project-card img {
-    width: 100%;
-    max-height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
+/* Tags Container */
+.tags-container {
+    margin: 10px 0; /* Space around the tags */
 }
 
-.project-card h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #333;
-}
-
-.project-card .tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.project-card .tag-pill {
-    background-color: #333;
-    color: #fff;
-    border-radius: 50px;
-    padding: 5px 10px;
-    margin: 5px;
-    font-size: 12px;
+/* Pill Style */
+.pill {
+    display: inline-block; /* Display tags inline */
+    background-color: #007bff; /* Change to desired background color */
+    color: white; /* Text color */
+    border-radius: 20px; /* Round shape for pills */
+    padding: 5px 10px; /* Padding inside the pills */
+    margin: 5px; /* Space between pills */
+    font-size: 12px; /* Font size for tags */
 }
 
 /* Layout for Project List */
