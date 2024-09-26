@@ -1,59 +1,9 @@
-// Sample project data with image placeholders
+// Sample project data
 const projects = [
-    {
-        title: 'Sales Analysis',
-        description: 'Analyzing sales data using Power BI.',
-        tags: ['Power BI', 'Data Visualization'],
-        img: 'https://via.placeholder.com/300x150' // Image placeholder URL
-    },
-    {
-        title: 'Customer Segmentation',
-        description: 'K-means clustering on customer data.',
-        tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Customer Segmentation',
-        description: 'K-means clustering on customer data.',
-        tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Customer Segmentation',
-        description: 'K-means clustering on customer data.',
-        tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Customer Segmentation',
-        description: 'K-means clustering on customer data.',
-        tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Inventory Management',
-        description: 'SQL-based inventory tracking and analysis.',
-        tags: ['SQL', 'Excel'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Inventory Management',
-        description: 'SQL-based inventory tracking and analysis.',
-        tags: ['SQL', 'Excel'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Inventory Management',
-        description: 'SQL-based inventory tracking and analysis.',
-        tags: ['SQL', 'Excel'],
-        img: 'https://via.placeholder.com/300x150' 
-    },
-    {
-        title: 'Marketing Campaign Analysis',
-        description: 'Effectiveness of marketing campaigns.',
-        tags: ['R', 'Data Visualization'],
-        img: 'https://via.placeholder.com/300x150' 
-    }
+    { title: 'Sales Analysis', description: 'Analyzing sales data using Power BI.', tags: ['Power BI', 'Data Visualization'] },
+    { title: 'Customer Segmentation', description: 'K-means clustering on customer data.', tags: ['Python', 'Machine Learning'] },
+    { title: 'Inventory Management', description: 'SQL-based inventory tracking and analysis.', tags: ['SQL', 'Excel'] },
+    { title: 'Marketing Campaign Analysis', description: 'Effectiveness of marketing campaigns.', tags: ['R', 'Data Visualization'] }
 ];
 
 // Function to create project cards
@@ -63,35 +13,24 @@ function createProjectCards() {
     projects.forEach(project => {
         const card = document.createElement('div');
         card.classList.add('project-card');
-        
-        // Create image element
-        const img = document.createElement('img');
-        img.src = project.img;
-        img.alt = project.title;
-        
-        // Create title element
+
         const title = document.createElement('h3');
         title.textContent = project.title;
 
-        // Create tag container and tag pills
-        const tagsContainer = document.createElement('div');
-        tagsContainer.classList.add('tags');
-        project.tags.forEach(tag => {
-            const tagPill = document.createElement('span');
-            tagPill.classList.add('tag-pill');
-            tagPill.textContent = tag;
-            tagsContainer.appendChild(tagPill);
-        });
-        
-        // Append elements to card
-        card.appendChild(img);
+        const tags = document.createElement('p');
+        tags.textContent = 'Tags: ' + project.tags.map(tag => `<span class="pill">${tag}</span>`).join(', ');
+
+        const description = document.createElement('p');
+        description.textContent = project.description; // Add the description
+
         card.appendChild(title);
-        card.appendChild(tagsContainer);
-        
-        // Add card to the project list
+        card.appendChild(tags);
+        card.appendChild(description); // Append the description below the tags
+
         projectList.appendChild(card);
     });
 }
+
 
 // Filter projects based on search input
 document.getElementById('search-bar').addEventListener('input', (e) => {
