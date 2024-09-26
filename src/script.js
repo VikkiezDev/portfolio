@@ -4,25 +4,25 @@ const projects = [
         title: 'Sales Analysis', 
         description: 'Analyzing sales data using Power BI.', 
         tags: ['Power BI', 'Data Visualization'],
-        img: 'https://via.placeholder.com/150' // Add a placeholder image URL
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
     },
     { 
         title: 'Customer Segmentation', 
         description: 'K-means clustering on customer data.', 
         tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/150' // Add a placeholder image URL
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
     },
     { 
         title: 'Inventory Management', 
         description: 'SQL-based inventory tracking and analysis.', 
         tags: ['SQL', 'Excel'],
-        img: 'https://via.placeholder.com/150' // Add a placeholder image URL
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
     },
     { 
         title: 'Marketing Campaign Analysis', 
         description: 'Effectiveness of marketing campaigns.', 
         tags: ['R', 'Data Visualization'],
-        img: 'https://via.placeholder.com/150' // Add a placeholder image URL
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
     }
 ];
 
