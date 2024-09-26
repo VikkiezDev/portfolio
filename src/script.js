@@ -1,9 +1,21 @@
 // Sample project data with image placeholders
 const projects = [
     { 
+        title: 'HR Analysis', 
+        description: 'Analyzing sales data using Power BI.', 
+        tags: ['Apache Superset', 'Data Visualization'],
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
+    },
+    { 
         title: 'Sales Analysis', 
         description: 'Analyzing sales data using Power BI.', 
         tags: ['Power BI', 'Data Visualization'],
+        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
+    },
+    { 
+        title: 'Sales Analysis', 
+        description: 'Analyzing sales data using Power BI.', 
+        tags: ['Pandas', 'Data Visualization'],
         img: 'https://via.placeholder.com/100' // Add a placeholder image URL
     },
     { 
