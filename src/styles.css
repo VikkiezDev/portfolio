@@ -89,25 +89,30 @@ h1, h2 {
 }
 
 /* Button Styling */
-.cta-button {
+/* Button styles */
+.btn {
     display: inline-block;
-    padding: 10px 20px; /* Controlled padding */
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #f5f5f5; /* Adjust button color */
+    color: white;
     text-align: center;
-    width: auto;/* Prevents button from stretching to fill container */
-    white-space: nowrap; /* Ensures the text stays in one line */
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 10px 0 0; /* Space between buttons */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #444;
-    transform: scale(1.05);
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #f5f5f5;
 }
 
+/* Align buttons to center */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* Fade-in animations */
 @keyframes fadeIn {
