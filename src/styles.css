@@ -89,30 +89,12 @@ h1, h2 {
 }
 
 /* Button Styling */
-/* Button Styling */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px; /* Controlled padding */
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-    width: auto;/* Prevents button from stretching to fill container */
-    white-space: nowrap; /* Ensures the text stays in one line */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
 
-.cta-button:hover {
-    background-color: #444;
-    transform: scale(1.05);
-}
 .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333; /* Adjust button color */
-    color: white;
+    color: #fff;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
@@ -123,7 +105,8 @@ h1, h2 {
 
 /* Hover effect for buttons */
 .btn:hover {
-    background-color: #f5f5f5;
+    background-color: #444;
+    transform: scale(1.05);
 }
 
 /* Align buttons to center */
