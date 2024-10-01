@@ -10,7 +10,7 @@ const projects = [
         title: 'Sales Analysis', 
         description: 'Analyzing sales data using Power BI.', 
         tags: ['Power BI', 'Data Visualization'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
+        img: 'https://i2.wp.com/databear.com/wp-content/uploads/2016/04/Xero-Financial-Dashboard.png?fit=1741%2C1254&ssl=1' // Add a placeholder image URL
     },
     { 
         title: 'Sales Analysis', 
