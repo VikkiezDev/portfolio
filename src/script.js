@@ -1,40 +1,22 @@
 // Sample project data with image placeholders
 const projects = [
     { 
-        title: 'HR Analysis', 
-        description: 'Analyzing sales data using Power BI.', 
-        tags: ['Apache Superset', 'Data Visualization'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
+        title: 'Walmart sales data analysis', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python','Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7' // Add a placeholder image URL
     },
     { 
-        title: 'Sales Analysis', 
-        description: 'Analyzing sales data using Power BI.', 
-        tags: ['Power BI', 'Data Visualization'],
-        img: 'https://i2.wp.com/databear.com/wp-content/uploads/2016/04/Xero-Financial-Dashboard.png?fit=1741%2C1254&ssl=1' // Add a placeholder image URL
+        title: 'Online Retail Analytics with PSQL', 
+        description: 'Analyzing online retails data Postgresql.', 
+        tags: ['Postgresql', 'PgAdmin4', 'Azure Data Studio','Data Visualization'],
+        img: 'https://www.specialityfoodmagazine.com/assets/images/other/online_marketplaces.jpg' // Add a placeholder image URL
     },
     { 
-        title: 'Sales Analysis', 
-        description: 'Analyzing sales data using Power BI.', 
-        tags: ['Pandas', 'Data Visualization'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
-    },
-    { 
-        title: 'Customer Segmentation', 
-        description: 'K-means clustering on customer data.', 
-        tags: ['Python', 'Machine Learning'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
-    },
-    { 
-        title: 'Inventory Management', 
-        description: 'SQL-based inventory tracking and analysis.', 
-        tags: ['SQL', 'Excel'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
-    },
-    { 
-        title: 'Marketing Campaign Analysis', 
-        description: 'Effectiveness of marketing campaigns.', 
-        tags: ['R', 'Data Visualization'],
-        img: 'https://via.placeholder.com/100' // Add a placeholder image URL
+        title: 'ETL Pipeline with Apache Airflow', 
+        description: 'Created an ETL pipeline which runs every 5 mins (source - Postgres | Destination - MySQL)', 
+        tags: ['Apache Airflow', 'Python', 'Postgres', 'MySQL', 'ETL'],
+        img: 'https://theaisummer.com/static/c9ade90b8812a0958915563e5058db44/ee604/apache-airflow-tutorial.png' // Add a placeholder image URL
     }
 ];
 
