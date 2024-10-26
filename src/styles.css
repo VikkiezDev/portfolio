@@ -334,51 +334,7 @@ h3 {
 
 
 /* Contact Section */
-.about-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.about-container h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.about-container p {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.contact-icons {
-    margin-top: 20px;
-}
-
-.contact-icons a {
-    color: #333;
-    font-size: 1.5em;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.contact-icons a:hover {
-    color: #0073b1; /* LinkedIn Blue, you can add unique colors if you prefer */
-}
-
-.contact-icons i {
-    display: inline-block;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
-}
-
-/* #contact p {
+#contact p {
     margin-bottom: 10px;
 }
 a {
