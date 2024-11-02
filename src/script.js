@@ -138,12 +138,17 @@ function createCertificationCards() {
         const card = document.createElement('div');
         card.classList.add('certification-card');
         
+        const link = document.createElement('a');
+        link.href = cert.link; // Set the clickable link
+        link.target = '_blank'; // Open link in a new tab
+
         const img = document.createElement('img');
         img.src = cert.imgSrc;
         img.alt = 'Certification Image';
 
-        card.appendChild(img);
-        certificationList.appendChild(card);
+        link.appendChild(img); // Add image to the link
+        card.appendChild(link); // Add link to the card
+        certificationList.appendChild(card); // Add card to the list
     });
 }
 
