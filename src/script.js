@@ -125,7 +125,7 @@ createProjectCards();
 const certifications = [
     { imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Accenture%20Certificate.PNG' },
     { imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/AWS%20Certificate.PNG' },
-    { imgSrc: 'https://via.placeholder.com/500x350' },
+    { imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Hp%20Life%20Certificate.PNG' },
     // Add more certifications here
 ];
 
