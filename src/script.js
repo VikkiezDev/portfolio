@@ -123,7 +123,7 @@ createProjectCards();
 
 // Sample certification data
 const certifications = [
-    { imgSrc: 'https://via.placeholder.com/500x350' },
+    { imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/AWS%20Certificate.PNG' },
     { imgSrc: 'https://via.placeholder.com/500x350' },
     { imgSrc: 'https://via.placeholder.com/500x350' },
     // Add more certifications here
