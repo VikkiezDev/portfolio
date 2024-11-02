@@ -124,14 +124,17 @@ createProjectCards();
 // Sample certification data
 const certifications = [
     { 
+        title: 'Accenture Data Analytics and Visualization Virtual Internship',
         img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Accenture%20Certificate.PNG',
         link: 'https://tinyurl.com/3naesy4h' 
     },
     { 
+        title: 'AWS Academy Machine Learning Certification',
         img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/AWS%20Certificate.PNG', 
         link: 'https://www.credly.com/badges/426eb2e5-d4a8-420a-8248-2cae86f76563' 
     },
     { 
+        title: 'Agile Project Management',
         img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Hp%20Life%20Certificate.PNG',
         link: 'https://www.life-global.org/certificate/d919d09a-097b-48ce-8dc4-e2086e4e3322'
     },
