@@ -124,15 +124,15 @@ createProjectCards();
 // Sample certification data
 const certifications = [
     { 
-        img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Accenture%20Certificate.PNG',
+        imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Accenture%20Certificate.PNG',
         link: 'https://tinyurl.com/3naesy4h' 
     },
     { 
-        img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/AWS%20Certificate.PNG', 
+        imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/AWS%20Certificate.PNG', 
         link: 'https://www.credly.com/badges/426eb2e5-d4a8-420a-8248-2cae86f76563' 
     },
     { 
-        img: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Hp%20Life%20Certificate.PNG',
+        imgSrc: 'https://raw.githubusercontent.com/VikkiezDev/portfolio/refs/heads/main/assets/Hp%20Life%20Certificate.PNG',
         link: 'https://www.life-global.org/certificate/d919d09a-097b-48ce-8dc4-e2086e4e3322'
     },
     // Add more certifications here
@@ -147,23 +147,17 @@ function createCertificationCards() {
         const card = document.createElement('div');
         card.classList.add('certification-card');
         
-        const link = document.createElement('a');
-        link.href = cert.link; // Set the clickable link
-        link.target = '_blank'; // Open link in a new tab
-
         const img = document.createElement('img');
         img.src = cert.imgSrc;
         img.alt = 'Certification Image';
 
-        link.appendChild(img); // Add image to the link
-        card.appendChild(link); // Add link to the card
-        certificationList.appendChild(card); // Add card to the list
+        card.appendChild(img);
+        certificationList.appendChild(card);
     });
 }
 
 // Initialize certification cards on page load
 createCertificationCards();
-
 
 // Scroll to Top Button
 const backToTopButton = document.getElementById('back-to-top');
