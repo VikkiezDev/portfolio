@@ -1,11 +1,46 @@
 // Sample project data with image placeholders
 const projects = [
     { 
-        title: 'Walmart sales data analysis', 
+        title: 'AI Global Index Analysis', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python', 'Pandas', 'Matplotlib', 'EDA', 'Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7', // Changes needed from down this line.
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+    },
+    { 
+        title: 'Netflix Users Data Analytics', 
         description: 'Analyzing sales data using Python.', 
         tags: ['Python','Data Visualization'],
         img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7',
-        link: 'https://github.com/VikkiezDev/Python-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+    },
+    { 
+        title: 'Nvidia Stock Price Analysis', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python','Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+    },
+    { 
+        title: 'Scrapify', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python','Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+    },
+    { 
+        title: 'Data Analytics Pipeline', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python','Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
+    },
+    { 
+        title: 'Walmart Sales Data Analysis', 
+        description: 'Analyzing sales data using Python.', 
+        tags: ['Python','Data Visualization'],
+        img: 'https://th.bing.com/th/id/OIP.1bv0L9lpb8TF98ISR-pj8gHaGL?w=224&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+        link: 'https://github.com/VikkiezDev/Walmart-Sales-Data-Analytics' // Add a link for each project (replace '#' with actual URLs)
     },
     { 
         title: 'Online Retail Analytics with PSQL', 
