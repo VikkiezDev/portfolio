@@ -168,5 +168,39 @@ const siteData = {
       details: "Short description, honors, or relevant coursework."
     },
     */
-  ]
+  ],
+
+   // Remove the AWS entry from the `education` array, then add this new array:
+   certifications: [
+     {
+       title: "AWS Certified Data Analytics – Specialty",
+       issuer: "Amazon Web Services",
+       date: "2023",
+       credentialUrl: "https://www.credly.com/your-badge-link",
+       credentialId: "ABC123XYZ"
+     },
+     {
+       title: "AWS Certified Data Analytics – Specialty",
+       issuer: "Amazon Web Services",
+       date: "2023",
+       credentialUrl: "https://www.credly.com/your-badge-link",
+       credentialId: "ABC123XYZ"
+     },
+     {
+       title: "AWS Certified Data Analytics – Specialty",
+       issuer: "Amazon Web Services",
+       date: "2023",
+       credentialUrl: "https://www.credly.com/your-badge-link",
+       credentialId: "ABC123XYZ"
+     }
+     /* Copy from here to add a new certification:
+     {
+       title: "Certification Name",
+       issuer: "Issuing Organization",
+       date: "Year",
+       credentialUrl: "https://verify-link.com",   // leave "" if none
+       credentialId: "Optional ID"                  // leave "" if none
+     },
+     */
+   ]
 };
