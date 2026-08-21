@@ -81,12 +81,11 @@ const siteData = {
   // "category" powers the filter buttons — reuse categories to group projects.
   projects: [
     {
-      title: "Real-Time Sales Pipeline",
+      title: "SaaS Vendor Health Monitoring Pipeline",
       category: "Data Engineering",
-      description: "Streaming pipeline ingesting live sales events via Kafka, transforming with Spark, and loading into Snowflake for near real-time dashboards.",
-      tech: ["Kafka", "Spark", "Snowflake", "Airflow"],
-      github: "https://github.com/yourusername/project-repo",
-      demo: ""
+      description: "Near-real-time SaaS dependency health monitor: AWS Lambda + EventBridge ingestion, Databricks medallion architecture with Unity Catalog, and a Power BI dashboard tracking uptime and incidents across 6 vendors.",
+      tech: ["AWS", "Databricks", "Unity Catalog", "PySpark", "SQL", "Power BI"],
+      github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard"
     },
     {
       title: "Customer Churn Predictor",
@@ -147,16 +146,16 @@ const siteData = {
       degree: "M.Sc. in Information Technology",
       institution: "SIES (Nerul) College of Arts, Science and Commerce",
       location: "Nerul, Navi Mumbai",
-      start: "2022",
-      end: "2024",
+      start: "Aug 2022",
+      end: "Oct 2024",
       details: "Focus on distributed systems and statistical modeling. Thesis on scalable anomaly detection in streaming data."
     },
     {
       degree: "B.Sc. in Information Technology",
       institution: "SIES (Nerul) College of Arts, Science and Commerce",
       location: "Nerul, Navi Mumbai",
-      start: "2019",
-      end: "2022",
+      start: "May 2019",
+      end: "Jun 2022",
       details: "Graduated with honors. Coursework in databases, algorithms, and applied statistics."
     }
 
