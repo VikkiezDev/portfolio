@@ -191,7 +191,7 @@ const siteData = {
      {
        title: "HP Agile Project Management Certification",
        issuer: "HP",
-       date: "2023",
+       date: "2025",
        credentialUrl: "https://www.life-global.org/certificate/d919d09a-097b-48ce-8dc4-e2086e4e3322",
        credentialId: "d919d09a-097b-48ce-8dc4-e2086e4e3322"
      }
