@@ -185,6 +185,24 @@ function renderProjectGrid() {
   `).join('');
 }
 
+/* ---------- CERTIFICATION ---------- */
+function renderCertifications() {
+  const container = document.getElementById('certificationsGrid');
+  const icon = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 14L6 22l6-3 6 3-2.5-8"/></svg>';
+  container.innerHTML = siteData.certifications.map(c => `
+    <div class="cert-card reveal">
+      <div class="cert-badge">${icon}</div>
+      <div>
+        <div class="cert-title">${escapeHtml(c.title)}</div>
+        <div class="cert-issuer">${escapeHtml(c.issuer)}</div>
+        <div class="cert-date">${escapeHtml(c.date)}${c.credentialId ? ' · ID: ' + escapeHtml(c.credentialId) : ''}</div>
+      </div>
+      ${c.credentialUrl ? `<a href="${escapeAttr(c.credentialUrl)}" target="_blank" rel="noopener noreferrer" class="cert-link">View Credential →</a>` : ''}
+    </div>
+  `).join('');
+  observeReveal(container.querySelectorAll('.reveal'));
+}
+
 /* ---------- EDUCATION ---------- */
 function renderEducation() {
   const container = document.getElementById('educationList');
