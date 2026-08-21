@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initNavbarScroll();
   initTypewriter();
+  initLeetcodeCounter();
   renderSkills();
   renderExperience();
   renderProjects();
