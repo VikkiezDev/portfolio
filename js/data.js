@@ -40,11 +40,11 @@ const siteData = {
       start: "May 2025",
       end: "Jul 2026",
       points: [
-        "Redesigned the core ELT pipeline, cutting nightly load time from 6 hours to 45 minutes",
-        "Built a self-serve data warehouse layer used by 12+ teams for reporting and analytics",
-        "Introduced dbt-based testing and documentation, reducing data quality incidents by 70%"
+        "Engineered SQL scripts to clean 6,000+ leads, standardizing core data",
+        "Fixed schema errors and formatting, boosting downstream data accuracy",
+        "Resolved null values and anomalies to deliver production-ready datasets"
       ],
-      tech: ["Python", "Airflow", "Snowflake", "dbt", "AWS"]
+      tech: ["SQL", "CRM", "Excel"]
     },
     {
       role: "Consultant Analyst",
@@ -54,11 +54,11 @@ const siteData = {
       start: "Nov 2024",
       end: "Mar 2025",
       points: [
-        "Built executive dashboards tracking revenue, churn, and inventory across 40+ stores",
-        "Automated weekly reporting, saving the analytics team ~10 hours per week",
-        "Partnered with product teams to define and track key business metrics"
+        "Built Excel pipelines via VLOOKUPs and Pivots, automating report generation",
+        "Standardized raw data workflows, cutting data discrepancies by 95%",
+        "Streamlined large-scale data transformations to eliminate manual processing errors"
       ],
-      tech: ["SQL", "Tableau", "Python", "PostgreSQL"]
+      tech: ["Excel", "Avanced Excel", "Python"]
     }
     /* Copy from here to add a new role:
     {
@@ -103,31 +103,31 @@ const siteData = {
       tech: ["Tableau", "SQL", "Python"],
       github: "",
       demo: "https://your-demo-link.com"
-    },
-    {
-      title: "Open Data Warehouse Starter",
-      category: "Data Engineering",
-      description: "A reusable dbt + Airflow project template implementing medallion architecture (bronze/silver/gold) for quick-start analytics engineering.",
-      tech: ["dbt", "Airflow", "PostgreSQL"],
-      github: "https://github.com/yourusername/project-repo",
-      demo: ""
-    },
-    {
-      title: "COVID-19 Trends Explorer",
-      category: "Analytics",
-      description: "Analyzed and visualized global COVID-19 case data, uncovering regional trends and building a public exploratory dashboard.",
-      tech: ["Python", "Pandas", "Plotly", "Streamlit"],
-      github: "https://github.com/yourusername/project-repo",
-      demo: "https://your-demo-link.com"
-    },
-    {
-      title: "A/B Testing Framework",
-      category: "Analytics",
-      description: "Internal Python library standardizing statistical significance testing and reporting for product experiments across teams.",
-      tech: ["Python", "SciPy", "Pandas"],
-      github: "https://github.com/yourusername/project-repo",
-      demo: ""
     }
+    // {
+    //   title: "Open Data Warehouse Starter",
+    //   category: "Data Engineering",
+    //   description: "A reusable dbt + Airflow project template implementing medallion architecture (bronze/silver/gold) for quick-start analytics engineering.",
+    //   tech: ["dbt", "Airflow", "PostgreSQL"],
+    //   github: "https://github.com/yourusername/project-repo",
+    //   demo: ""
+    // },
+    // {
+    //   title: "COVID-19 Trends Explorer",
+    //   category: "Analytics",
+    //   description: "Analyzed and visualized global COVID-19 case data, uncovering regional trends and building a public exploratory dashboard.",
+    //   tech: ["Python", "Pandas", "Plotly", "Streamlit"],
+    //   github: "https://github.com/yourusername/project-repo",
+    //   demo: "https://your-demo-link.com"
+    // },
+    // {
+    //   title: "A/B Testing Framework",
+    //   category: "Analytics",
+    //   description: "Internal Python library standardizing statistical significance testing and reporting for product experiments across teams.",
+    //   tech: ["Python", "SciPy", "Pandas"],
+    //   github: "https://github.com/yourusername/project-repo",
+    //   demo: ""
+    // }
 
     /* Copy from here to add a new project:
     {
@@ -175,25 +175,25 @@ const siteData = {
    // Remove the AWS entry from the `education` array, then add this new array:
    certifications: [
      {
-       title: "AWS Certified Data Analytics – Specialty",
-       issuer: "Amazon Web Services",
-       date: "2023",
-       credentialUrl: "https://www.credly.com/your-badge-link",
-       credentialId: "ABC123XYZ"
+       title: "Databricks Certified Data Engineer Associate",
+       issuer: "Databricks",
+       date: "2026",
+       credentialUrl: "https://credentials.databricks.com/060ad033-e6bf-4838-bb33-84b759c2318d#acc.XbeMk2rA",
+       credentialId: "176293438"
      },
      {
-       title: "AWS Certified Data Analytics – Specialty",
-       issuer: "Amazon Web Services",
-       date: "2023",
-       credentialUrl: "https://www.credly.com/your-badge-link",
-       credentialId: "ABC123XYZ"
+       title: "Accenture Data Analytics and Visualization Job Simulation",
+       issuer: "Forage",
+       date: "2025",
+       credentialUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20North%20America/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_mHkfGjmvMeEz5bgSj_1730048820463_completion_certificate.pdf",
+       credentialId: "mHkfGjmvMeEz5bgSj"
      },
      {
-       title: "AWS Certified Data Analytics – Specialty",
-       issuer: "Amazon Web Services",
+       title: "HP Agile Project Management Certification",
+       issuer: "HP",
        date: "2023",
-       credentialUrl: "https://www.credly.com/your-badge-link",
-       credentialId: "ABC123XYZ"
+       credentialUrl: "https://www.life-global.org/certificate/d919d09a-097b-48ce-8dc4-e2086e4e3322",
+       credentialId: "d919d09a-097b-48ce-8dc4-e2086e4e3322"
      }
      /* Copy from here to add a new certification:
      {
