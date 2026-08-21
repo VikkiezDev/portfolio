@@ -90,6 +90,42 @@ function initTypewriter() {
   tick();
 }
 
+/* ---------- LEETCODE ---------- */
+async function initLeetcodeCounter() {
+  const el = document.getElementById('leetcodeStat');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let target = siteData.leetcodeFallback || 0;
+
+  try {
+    const res = await fetch(`https://leetcode-stats-api.herokuapp.com/${siteData.leetcodeUsername}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (typeof data.totalSolved === 'number') target = data.totalSolved;
+    }
+  } catch (err) {
+    // silently fall back to leetcodeFallback if the API is unreachable
+  }
+
+  if (reduceMotion) { el.textContent = target + '+'; return; }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        let current = 0;
+        const step = Math.max(1, Math.round(target / 40));
+        const interval = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(interval); }
+          el.textContent = current + '+';
+        }, 25);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(el);
+}
+
 /* ---------- SKILLS ---------- */
 function renderSkills() {
   const container = document.getElementById('skillsGrid');
