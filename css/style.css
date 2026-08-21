@@ -179,16 +179,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 6px solid var(--bg);
 }
 
-.scroll-indicator {
-  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-  width: 26px; height: 42px; border: 2px solid var(--border); border-radius: 16px; z-index: 1;
-}
-.scroll-indicator span {
-  position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
-  width: 4px; height: 8px; background: var(--primary); border-radius: 2px; animation: scrollDot 1.6s ease infinite;
-}
-@keyframes scrollDot { 0% { top: 8px; opacity: 1; } 80% { top: 22px; opacity: 0; } 100% { opacity: 0; } }
-
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
   .hero-desc { margin-left: auto; margin-right: auto; }
