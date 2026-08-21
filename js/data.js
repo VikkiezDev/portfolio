@@ -10,7 +10,7 @@
 
 const siteData = {
    leetcodeUsername: "Vignesh_Nadar",
-   leetcodeFallback: 450,   // shown if the API is ever down
+   leetcodeFallback: 50,   // shown if the API is ever down
 
   // Rotating roles shown in the hero typewriter effect
   roles: [
