@@ -173,12 +173,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-image { display: flex; justify-content: center; }
 .headshot-wrap {
   position: relative; width: 100%; max-width: 340px; aspect-ratio: 1; border-radius: 50%;
-  padding: 8px; background: linear-gradient(135deg, var(--primary), var(--accent));
-  animation: spin 12s linear infinite;
+  padding: 8px; background: var(--border);
 }
-@keyframes spin { from { filter: hue-rotate(0deg); } to { filter: hue-rotate(360deg); } }
-.headshot { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 6px solid var(--bg); animation: counterspin 12s linear infinite; }
-@keyframes counterspin { from { transform: rotate(0); } to { transform: rotate(0); } }
+.headshot {
+  width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 6px solid var(--bg);
+}
 
 .scroll-indicator {
   position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
