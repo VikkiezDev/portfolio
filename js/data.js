@@ -9,6 +9,8 @@
    ===================================================================== */
 
 const siteData = {
+   leetcodeUsername: "your-leetcode-username",
+   leetcodeFallback: 450,   // shown if the API is ever down
 
   // Rotating roles shown in the hero typewriter effect
   roles: [
