@@ -281,6 +281,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .project-links a { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; color: var(--text); transition: color 0.2s ease; }
 .project-links a:hover { color: var(--primary); }
 
+/* ============ CERTIFICATION ============ */
+.certifications-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.cert-card {
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; display: flex; flex-direction: column; gap: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cert-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.cert-badge {
+  width: 46px; height: 46px; border-radius: 12px; background: var(--bg-alt); color: var(--primary);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.cert-title { font-weight: 700; font-size: 1.02rem; }
+.cert-issuer { color: var(--primary); font-size: 0.88rem; }
+.cert-date { font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted); }
+.cert-link { font-size: 0.85rem; font-weight: 600; margin-top: auto; }
+.cert-link:hover { color: var(--primary); }
+
 /* ============ EDUCATION ============ */
 .education-list { display: grid; gap: 20px; max-width: 800px; margin: 0 auto; }
 .education-card {
