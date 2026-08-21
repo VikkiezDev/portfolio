@@ -95,9 +95,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ============ NAVBAR ============ */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.navbar::before {
+  content: '';
+  position: absolute; inset: 0; z-index: -1;
   background: color-mix(in srgb, var(--bg) 80%, transparent);
-  backdrop-filter: blur(12px); border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease, background 0.3s ease;
+  backdrop-filter: blur(12px);
 }
 .navbar.scrolled { border-bottom-color: var(--border); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
