@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Morgan | Data Engineer & Analyst</title>
+<meta name="description" content="Alex Morgan — Data Engineer & Analyst specializing in scalable data pipelines, analytics, and BI. Explore my projects, experience, and get in touch.">
+<meta name="keywords" content="Data Engineer, Data Analyst, Portfolio, SQL, Python, ETL, Data Pipelines, Business Intelligence">
+<meta name="author" content="Alex Morgan">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alex Morgan | Data Engineer & Analyst">
+<meta property="og:description" content="Data Engineer & Analyst specializing in scalable data pipelines, analytics, and BI dashboards.">
+<meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+<meta property="og:url" content="https://yourdomain.com/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alex Morgan | Data Engineer & Analyst">
+<meta name="twitter:description" content="Data Engineer & Analyst specializing in scalable data pipelines, analytics, and BI dashboards.">
+<meta name="twitter:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alex Morgan",
+  "jobTitle": "Data Engineer & Analyst",
+  "url": "https://yourdomain.com",
+  "image": "https://yourdomain.com/assets/headshot.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/yourprofile",
+    "https://github.com/yourusername"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" aria-label="Home">
+      <span class="logo-badge">AM</span>
+      <span class="logo-text">Alex Morgan</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="assets/resume.pdf" download class="btn btn-sm btn-primary nav-resume-btn">Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO / HOME ============ -->
+  <section id="home" class="hero">
+    <div class="hero-decor" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1 class="hero-name">Alex Morgan</h1>
+        <h2 class="hero-role">I build <span id="typedRole" class="gradient-text"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">
+          I turn messy, disconnected data into reliable pipelines and clear insights.
+          I specialize in building scalable ETL/ELT systems, warehouses, and dashboards
+          that help teams make faster, better decisions.
+        </p>
+
+        <div class="hero-cta">
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 015.9 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A10.5 10.5 0 0023.5 12c0-6.3-5.2-11.5-11.5-11.5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.7 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          </a>
+          <a href="mailto:you@example.com" aria-label="Email" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="headshot-wrap">
+          <img src="assets/headshot.jpg" alt="Portrait of Alex Morgan" class="headshot" width="380" height="380" loading="eager">
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">About Me</p>
+      <h2 class="section-title reveal">A bit of my story</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a data engineer and analyst with a passion for building systems that
+            make data trustworthy, accessible, and useful. My background spans
+            designing ELT pipelines, modeling warehouses, and building the dashboards
+            that turn raw numbers into decisions people actually act on.
+          </p>
+          <p>
+            I care about clean architecture, documentation, and data that people can
+            trust at 2am when a report breaks. Outside of work, I enjoy contributing
+            to open-source tooling and mentoring people breaking into the field.
+          </p>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10M+</span>
+            <span class="stat-label">Records Processed Daily</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Cloud Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Toolbox</p>
+      <h2 class="section-title reveal">Skills & Technologies</h2>
+      <div id="skillsGrid" class="skills-grid"><!-- rendered by main.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Career Path</p>
+      <h2 class="section-title reveal">Experience</h2>
+      <div id="timeline" class="timeline"><!-- rendered by main.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">My Work</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div id="projectFilters" class="project-filters reveal"><!-- rendered by main.js --></div>
+      <div id="projectsGrid" class="projects-grid"><!-- rendered by main.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section">
+    <div class="container">
+      <p class="section-eyebrow reveal">Background</p>
+      <h2 class="section-title reveal">Education & Certifications</h2>
+      <div id="educationList" class="education-list"><!-- rendered by main.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Get In Touch</p>
+      <h2 class="section-title reveal">Let's work together</h2>
+      <p class="section-subtitle reveal">Have a role, project, or question in mind? My inbox is open.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:you@example.com" class="contact-card">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </span>
+            <span>
+              <strong>Email</strong>
+              <span>you@example.com</span>
+            </span>
+          </a>
+
+          <a href="tel:+10000000000" class="contact-card">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z"/></svg>
+            </span>
+            <span>
+              <strong>Phone</strong>
+              <span>+1 (000) 000-0000</span>
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.7 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.5C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+            </span>
+            <span>
+              <strong>LinkedIn</strong>
+              <span>/in/yourprofile</span>
+            </span>
+          </a>
+
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5 3.3 9.3 7.8 10.8.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11 11 0 015.9 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A10.5 10.5 0 0023.5 12c0-6.3-5.2-11.5-11.5-11.5z"/></svg>
+            </span>
+            <span>
+              <strong>GitHub</strong>
+              <span>@yourusername</span>
+            </span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <!-- Sign up free at formspree.io, replace YOUR_FORM_ID below -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Alex Morgan. Built with care.</p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="js/data.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
