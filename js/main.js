@@ -15,7 +15,48 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initRevealObserver();
   initBackToTop();
-  initContactForm();
+  function initContactForm() {
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  const btn = document.getElementById('submitBtn');
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.textContent = '';
+    status.className = 'form-status';
+
+    const formData = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode(formData)
+      });
+      if (res.ok) {
+        status.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+        status.classList.add('success');
+        form.reset();
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (err) {
+      status.textContent = "Something went wrong. Please email me directly instead.";
+      status.classList.add('error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    }
+  });
+}
   document.getElementById('year').textContent = new Date().getFullYear();
 });
 
