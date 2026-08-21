@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSkills();
   renderExperience();
   renderProjects();
+  renderCertifications();
   renderEducation();
   initScrollSpy();
   initRevealObserver();
