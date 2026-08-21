@@ -17,7 +17,7 @@ const siteData = {
     "scalable data pipelines",
     "cloud data warehouses",
     "clean, trustworthy datasets",
-    "dashboards people actually use"
+    "insightful dashboards"
   ],
 
   // ---------------- SKILLS ----------------
