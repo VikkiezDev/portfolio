@@ -83,7 +83,7 @@ const siteData = {
     {
       title: "SaaS Vendor Health Monitoring Pipeline",
       category: "Data Engineering",
-      description: "Near-real-time SaaS dependency health monitor: AWS Lambda + EventBridge ingestion, Databricks medallion architecture with Unity Catalog, and a Power BI dashboard tracking uptime and incidents across 6 vendors.",
+      description: "Near-real-time SaaS dependency health monitor using AWS Lambda, EventBridge ingestion, medallion architecture with Unity Catalog, and a Power BI.",
       tech: ["AWS", "Databricks", "Unity Catalog", "PySpark", "SQL", "Power BI"],
       github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard"
     },
