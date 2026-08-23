@@ -96,7 +96,7 @@ const siteData = {
     },
     {
       title: "Netflix User Behavior & Subscription Analytics",
-      category: "Visualization",
+      category: "Data Visualization",
       description: "This project focuses on performing analytics on Netflix User Database using MySQL and Power BI",
       tech: ["MySQL", "Power BI", "Stored Procedures", "MS Excel"],
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
