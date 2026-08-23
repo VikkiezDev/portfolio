@@ -88,20 +88,18 @@ const siteData = {
       github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard"
     },
     {
-      title: "Customer Churn Predictor",
-      category: "Machine Learning",
-      description: "End-to-end ML pipeline predicting customer churn with 88% accuracy, including feature engineering, model training, and a deployed scoring API.",
-      tech: ["Python", "scikit-learn", "FastAPI", "Docker"],
-      github: "https://github.com/yourusername/project-repo",
-      demo: "https://your-demo-link.com"
+      title: "Payment Analytics Data Warehouse",
+      category: "Data Warehousing",
+      description: "Production-grade payment analytics data warehouse built on Databricks + AWS S3 using medallion architecture, star schema dimensional modeling, and Delta Lake",
+      tech: ["SQL", "AWS", "Databricks", "Unity Catalog"],
+      github: "https://github.com/VikkiezDev/Payment-Analytics-Data-Warehouse"
     },
     {
-      title: "Marketing Attribution Dashboard",
+      title: "Netflix User Behavior & Subscription Analytics",
       category: "Visualization",
-      description: "Interactive Tableau dashboard unifying data from five marketing platforms to track campaign ROI and multi-touch attribution.",
-      tech: ["Tableau", "SQL", "Python"],
-      github: "",
-      demo: "https://your-demo-link.com"
+      description: "This project focuses on performing analytics on Netflix User Database using MySQL and Power BI",
+      tech: ["MySQL", "Power BI", "Stored Procedures", "MS Excel"],
+      github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
     }
     // {
     //   title: "Open Data Warehouse Starter",
@@ -148,7 +146,7 @@ const siteData = {
       location: "Nerul, Navi Mumbai",
       start: "Aug 2022",
       end: "Oct 2024",
-      details: "Focus on distributed systems and statistical modeling. Thesis on scalable anomaly detection in streaming data."
+      details: "Relevant Coursework: Data Science, Deep Learning, Database Management System, Data Analystics"
     },
     {
       degree: "B.Sc. in Information Technology",
@@ -156,7 +154,7 @@ const siteData = {
       location: "Nerul, Navi Mumbai",
       start: "May 2019",
       end: "Jun 2022",
-      details: "Graduated with honors. Coursework in databases, algorithms, and applied statistics."
+      details: "Relevant Coursework: SQL Querying, Python Programming, Machine Learning, Digital Electronincs"
     }
 
     /* Copy from here to add a new entry:
