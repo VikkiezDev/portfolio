@@ -191,6 +191,20 @@ const siteData = {
        date: "2025",
        credentialUrl: "https://www.life-global.org/certificate/d919d09a-097b-48ce-8dc4-e2086e4e3322",
        credentialId: "d919d09a-097b-48ce-8dc4-e2086e4e3322"
+     },
+     {
+       title: "Microsoft Certified: Power BI Data Analyst Associate",
+       issuer: "Microsoft",
+       date: "Exam Scheduled",
+       credentialUrl: "",   // leave "" if none
+       credentialId: ""                  // leave "" if none
+     },
+     {
+       title: "Microsoft Certified: SQL AI Developer Associate",
+       issuer: "Microsoft",
+       date: "Exam Scheduled",
+       credentialUrl: "",   // leave "" if none
+       credentialId: ""                  // leave "" if none
      }
      /* Copy from here to add a new certification:
      {
