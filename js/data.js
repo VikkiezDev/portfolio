@@ -90,7 +90,7 @@ const siteData = {
     {
       title: "Payment Analytics Data Warehouse",
       category: "Data Warehousing",
-      description: "Production-grade payment analytics data warehouse built on Databricks + AWS S3 using medallion architecture, star schema dimensional modeling, and Delta Lake",
+      description: "Production-grade payment analytics data warehouse built on Databricks + AWS S3 using medallion architecture, star schema dimensional modeling, and Delta Lake.",
       tech: ["SQL", "AWS", "Databricks", "Unity Catalog"],
       github: "https://github.com/VikkiezDev/Payment-Analytics-Data-Warehouse"
     },
@@ -100,6 +100,14 @@ const siteData = {
       description: "This project focuses on performing analytics on Netflix User Database using MySQL and Power BI",
       tech: ["MySQL", "Power BI", "Stored Procedures", "MS Excel"],
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
+    },
+    {
+      title: "HR Employee Attrition Analysis",
+      category: "Data Analytics",
+      description: "Engineered a Power BI HR attrition dashboard using SQL for data staging and star-schema modeling, Excel for driver analysis, and DAX for key workforce metrics.",
+      tech: ["SQL", "Excel", "Power BI"],
+      github: "",
+      demo: ""   // leave "" if none
     }
     // {
     //   title: "Open Data Warehouse Starter",
