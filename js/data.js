@@ -96,19 +96,27 @@ const siteData = {
     },
     {
       title: "Netflix User Behavior & Subscription Analytics",
-      category: "Visualization",
+      category: "Data Analytics",
       description: "This project focuses on performing analytics on Netflix User Database using MySQL and Power BI",
       tech: ["MySQL", "Power BI", "Stored Procedures", "MS Excel"],
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
     },
     {
       title: "HR Employee Attrition Analysis",
-      category: "Visualization",
+      category: "Data Analytics",
       description: "Engineered a Power BI HR attrition dashboard using SQL for data staging and star-schema modeling, Excel for driver analysis, and DAX for key workforce metrics.",
       tech: ["SQL", "Excel", "Power BI"],
       github: "",
       demo: ""   // leave "" if none
-    }
+    },
+    {
+      title: "Some Dummy Dashboard",
+      category: "Data Visualization",
+      description: "Made a dummy dashboard",
+      tech: ["SQL", "Excel", "Power BI"],
+      github: "",
+      demo: ""   // leave "" if none
+    }   
     // {
     //   title: "Open Data Warehouse Starter",
     //   category: "Data Engineering",
