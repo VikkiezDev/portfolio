@@ -81,6 +81,14 @@ const siteData = {
   // "category" powers the filter buttons — reuse categories to group projects.
   projects: [
     {
+      title: "Apex Global Sports Data Warehousing",
+      category: "Data Warehousing",
+      description: "Built a modern data warehouse with SQL Server, including ETL processes, data modeling, and analytics.",
+      tech: ["T-SQL", "SQL Server Management Studio" "Excel"],
+      github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
+      demo: ""   // leave "" if none
+    },
+    {
       title: "SaaS Vendor Health Monitoring Pipeline",
       category: "Data Engineering",
       description: "Near-real-time SaaS dependency health monitor using AWS Lambda, EventBridge ingestion, medallion architecture with Unity Catalog, and a Power BI.",
@@ -102,17 +110,9 @@ const siteData = {
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
     },
     {
-      title: "HR Employee Attrition Analysis",
+      title: "HR Employee Attrition Analysis (Currently working on)",
       category: "Data Analytics",
       description: "Engineered a Power BI HR attrition dashboard using SQL for data staging and star-schema modeling, Excel for driver analysis, and DAX for key workforce metrics.",
-      tech: ["SQL", "Excel", "Power BI"],
-      github: "",
-      demo: ""   // leave "" if none
-    },
-    {
-      title: "Some Dummy Dashboard",
-      category: "Data Visualization",
-      description: "Made a dummy dashboard",
       tech: ["SQL", "Excel", "Power BI"],
       github: "",
       demo: ""   // leave "" if none
