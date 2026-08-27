@@ -22,10 +22,10 @@ const siteData = {
 
   // ---------------- SKILLS ----------------
   skills: [
-    { category: "Languages & Query", items: ["SQL", "Python", "PySpark", "Markdown", "Bash"] },
-    { category: "Data Engineering", items: ["Databricks", "Airflow", "Apache Spark", "Kafka"] },
-    { category: "Cloud & DevOps", items: ["AWS", "GCP", "Azure", "Git & Github"] },
-    { category: "Visualization & BI", items: ["Power BI", "Looker", "Tableau", "Streamlit"] },
+    { category: "Languages & Query", items: ["SQL", "T-SQL", "Python", "PySpark", "Markdown", "Bash"] },
+    { category: "Data Engineering", items: ["Databricks", "SQL Server Management Studio", "Airflow", "Apache Spark"] },
+    { category: "Cloud & DevOps", items: ["AWS", "Git & Github"] },
+    { category: "Visualization & BI", items: ["Power BI", "Looker", "Streamlit"] },
     { category: "Databases", items: ["MySQL Server", "Redshift", "BigQuery"] }
   ],
 
