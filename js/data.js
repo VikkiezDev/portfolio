@@ -84,7 +84,7 @@ const siteData = {
       title: "Apex Global Sports Data Warehousing",
       category: "Data Warehousing",
       description: "Built a modern data warehouse with SQL Server, including ETL processes, data modeling, and analytics.",
-      tech: ["T-SQL", "SQL Server Management Studio" "Excel"],
+      tech: ["T-SQL", "SQL Server Management Studio", "Excel"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
       demo: ""   // leave "" if none
     },
