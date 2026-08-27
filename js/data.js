@@ -23,7 +23,7 @@ const siteData = {
   // ---------------- SKILLS ----------------
   skills: [
     { category: "Languages & Query", items: ["SQL", "T-SQL", "Python", "PySpark", "Markdown", "Bash"] },
-    { category: "Data Engineering", items: ["Databricks", "SQL Server Management Studio", "Airflow", "Apache Spark"] },
+    { category: "Data Engineering", items: ["Databricks", "SSMS", "Airflow", "Apache Spark"] },
     { category: "Cloud & DevOps", items: ["AWS", "Git & Github"] },
     { category: "Visualization & BI", items: ["Power BI", "Looker", "Streamlit"] },
     { category: "Databases", items: ["MySQL Server", "Redshift", "BigQuery"] }
@@ -83,8 +83,8 @@ const siteData = {
     {
       title: "Apex Global Sports Data Warehousing",
       category: "Data Warehousing",
-      description: "Built a modern data warehouse with SQL Server, including ETL processes, data modeling, and analytics.",
-      tech: ["T-SQL", "SQL Server Management Studio", "Excel"],
+      description: "Built a modern data warehouse with SQL Server Management Studio, including ETL processes, data modeling, and analytics.",
+      tech: ["T-SQL", "SSMS", "Excel"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
       demo: ""   // leave "" if none
     },
