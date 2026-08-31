@@ -228,6 +228,7 @@ function renderProjectGrid() {
   container.innerHTML = list.map((p, i) => `
     <div class="project-card" style="animation-delay:${i * 0.06}s">
       ${p.isNew ? '<span class="project-badge-new">New</span>' : ''}
+      ${p.inProgress ? '<span class="project-badge-progress">In Progress</span>' : ''}
       <div class="project-thumb">${categoryIcons[p.category] || categoryIcons.default}</div>
       <div class="project-body">
         <div class="project-meta-row">
