@@ -179,6 +179,26 @@ const categoryIcons = {
 
 let activeFilter = 'All';
 
+/* ---------- RELATIVE TIME ---------- */
+function getRelativeTime(dateStr) {
+  const date = new Date(dateStr);
+  if (isNaN(date)) return '';
+
+  const now = new Date();
+  const diffMs = now - date;
+  const diffDay = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  if (diffDay <= 0) return 'Today';
+  if (diffDay === 1) return 'Yesterday';
+  if (diffDay < 30) return `${diffDay} day${diffDay > 1 ? 's' : ''} ago`;
+
+  const diffMonth = Math.floor(diffDay / 30);
+  if (diffMonth < 12) return `${diffMonth} month${diffMonth > 1 ? 's' : ''} ago`;
+
+  const diffYear = Math.floor(diffMonth / 12);
+  return `${diffYear} year${diffYear > 1 ? 's' : ''} ago`;
+}
+
 function renderProjects() {
   renderProjectFilters();
   renderProjectGrid();
@@ -207,9 +227,13 @@ function renderProjectGrid() {
 
   container.innerHTML = list.map((p, i) => `
     <div class="project-card" style="animation-delay:${i * 0.06}s">
+      ${p.isNew ? '<span class="project-badge-new">New</span>' : ''}
       <div class="project-thumb">${categoryIcons[p.category] || categoryIcons.default}</div>
       <div class="project-body">
-        <span class="project-category">${escapeHtml(p.category)}</span>
+        <div class="project-meta-row">
+          <span class="project-category">${escapeHtml(p.category)}</span>
+          ${p.date ? `<span class="project-date">${getRelativeTime(p.date)}</span>` : ''}
+        </div>
         <h3 class="project-title">${escapeHtml(p.title)}</h3>
         <p class="project-desc">${escapeHtml(p.description)}</p>
         <div class="project-tags">
