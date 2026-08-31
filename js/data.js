@@ -82,7 +82,7 @@ const siteData = {
   projects: [
       {
         title: "MyTrolly Sales Dashboard",
-        category: "Excel Dashboarding",
+        category: "Excel Dashboard",
         date: "2026-08-31",
         isNew: true,
         inProgress: false,
