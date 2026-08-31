@@ -83,6 +83,8 @@ const siteData = {
     {
       title: "Apex Global Sports Data Warehousing",
       category: "Data Warehousing",
+      date: "2026-08-25",      // ← new: use YYYY-MM-DD format
+      isNew: true, 
       description: "Built a modern data warehouse with SQL Server Management Studio, including ETL processes, data modeling, and analytics.",
       tech: ["T-SQL", "SSMS", "Excel"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
@@ -116,42 +118,20 @@ const siteData = {
       tech: ["SQL", "Excel", "Power BI"],
       github: "",
       demo: ""   // leave "" if none
-    }   
-    // {
-    //   title: "Open Data Warehouse Starter",
-    //   category: "Data Engineering",
-    //   description: "A reusable dbt + Airflow project template implementing medallion architecture (bronze/silver/gold) for quick-start analytics engineering.",
-    //   tech: ["dbt", "Airflow", "PostgreSQL"],
-    //   github: "https://github.com/yourusername/project-repo",
-    //   demo: ""
-    // },
-    // {
-    //   title: "COVID-19 Trends Explorer",
-    //   category: "Analytics",
-    //   description: "Analyzed and visualized global COVID-19 case data, uncovering regional trends and building a public exploratory dashboard.",
-    //   tech: ["Python", "Pandas", "Plotly", "Streamlit"],
-    //   github: "https://github.com/yourusername/project-repo",
-    //   demo: "https://your-demo-link.com"
-    // },
-    // {
-    //   title: "A/B Testing Framework",
-    //   category: "Analytics",
-    //   description: "Internal Python library standardizing statistical significance testing and reporting for product experiments across teams.",
-    //   tech: ["Python", "SciPy", "Pandas"],
-    //   github: "https://github.com/yourusername/project-repo",
-    //   demo: ""
-    // }
+    }
 
-    /* Copy from here to add a new project:
-    {
-      title: "Project Title",
-      category: "Data Engineering",
-      description: "1-2 sentence summary: the problem, your solution, and the impact/result.",
-      tech: ["Tool1", "Tool2"],
-      github: "https://github.com/yourusername/repo",
-      demo: "https://your-demo-link.com"   // leave "" if none
-    },
-    */
+   /* Copy from here to add a new project:
+   {
+     title: "Project Title",
+     category: "Data Engineering",
+     date: "2026-08-01",       // YYYY-MM-DD — used for the "X days ago" label
+     isNew: false,               // set true to show a green "New" badge
+     description: "1-2 sentence summary...",
+     tech: ["Tool1", "Tool2"],
+     github: "https://github.com/yourusername/repo",
+     demo: ""
+   },
+   */
   ],
 
   // ---------------- EDUCATION ----------------
