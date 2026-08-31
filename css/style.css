@@ -146,39 +146,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hamburger { display: flex; }
 }
 
-.nav-dropdown { position: relative; }
-.nav-dropdown-trigger {
-  display: flex; align-items: center; gap: 4px; background: none;
-}
-.nav-chevron { transition: transform 0.2s ease; }
-.nav-dropdown.open .nav-chevron { transform: rotate(180deg); }
-
-.nav-dropdown-menu {
-  position: absolute; top: calc(100% + 12px); left: 50%; transform: translateX(-50%);
-  background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px;
-  padding: 8px; min-width: 160px; box-shadow: var(--shadow-lg);
-  opacity: 0; visibility: hidden; transform: translateX(-50%) translateY(-8px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-}
-.nav-dropdown.open .nav-dropdown-menu {
-  opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
-}
-.nav-dropdown-link {
-  display: block; padding: 8px 12px; border-radius: 8px; font-size: 0.9rem;
-  color: var(--text-muted); transition: background 0.15s ease, color 0.15s ease;
-}
-.nav-dropdown-link:hover, .nav-dropdown-link.active { background: var(--bg-alt); color: var(--text); }
-
-@media (max-width: 860px) {
-  .nav-dropdown-menu {
-    position: static; transform: none; opacity: 1; visibility: visible;
-    box-shadow: none; border: none; background: none; padding: 4px 0 4px 16px;
-    max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
-  }
-  .nav-dropdown.open .nav-dropdown-menu { max-height: 200px; }
-  .nav-dropdown-link { padding: 10px 12px; }
-}
-
 /* ============ BADGE ============ */
 .availability-badge {
   display: inline-flex; align-items: center; gap: 8px;
@@ -402,17 +369,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .carousel-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; padding-right: 40px; }
 
-.carousel-image {
-  max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 12px;
-  cursor: zoom-in; transition: transform 0.3s ease; transform: scale(1);
-}
-.carousel-image.zoomed {
-  cursor: zoom-out; transform: scale(1.4);
-}
 .carousel-viewport {
   position: relative; display: flex; align-items: center; justify-content: center;
-  flex: 1; min-height: 0; overflow: auto; border-radius: 12px; background: var(--bg-alt);
+  flex: 1; min-height: 0; overflow: hidden; border-radius: 12px; background: var(--bg-alt);
 }
+.carousel-image { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 12px; }
 
 .carousel-nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
