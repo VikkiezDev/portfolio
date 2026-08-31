@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLeetcodeCounter();
   renderSkills();
   renderExperience();
+  initCarousel();
   renderProjects();
   renderCertifications();
   renderEducation();
@@ -243,10 +244,68 @@ function renderProjectGrid() {
         <div class="project-links">
           ${p.github ? `<a href="${escapeAttr(p.github)}" target="_blank" rel="noopener noreferrer">Code →</a>` : ''}
           ${p.demo ? `<a href="${escapeAttr(p.demo)}" target="_blank" rel="noopener noreferrer">Live Demo →</a>` : ''}
+          ${p.images && p.images.length ? `<button class="project-output-btn">Output →</button>` : ''}
         </div>
       </div>
     </div>
   `).join('');
+
+  // Wire up Output buttons to open the carousel with the right images
+  const withImages = list.filter(p => p.images && p.images.length);
+  container.querySelectorAll('.project-output-btn').forEach((btn, i) => {
+    btn.addEventListener('click', () => openCarousel(withImages[i].images, withImages[i].title));
+  });
+}
+
+/* ---------- OUTPUT CAROUSEL ---------- */
+let carouselImages = [];
+let carouselIndex = 0;
+
+function initCarousel() {
+  document.getElementById('carouselClose').addEventListener('click', closeCarousel);
+  document.getElementById('carouselOverlay').addEventListener('click', closeCarousel);
+  document.getElementById('carouselPrev').addEventListener('click', () => showCarouselImage(carouselIndex - 1));
+  document.getElementById('carouselNext').addEventListener('click', () => showCarouselImage(carouselIndex + 1));
+
+  document.addEventListener('keydown', (e) => {
+    const modal = document.getElementById('carouselModal');
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeCarousel();
+    if (e.key === 'ArrowLeft') showCarouselImage(carouselIndex - 1);
+    if (e.key === 'ArrowRight') showCarouselImage(carouselIndex + 1);
+  });
+}
+
+function openCarousel(images, title) {
+  carouselImages = images;
+  carouselIndex = 0;
+  document.getElementById('carouselTitle').textContent = title;
+  showCarouselImage(0);
+
+  const modal = document.getElementById('carouselModal');
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCarousel() {
+  const modal = document.getElementById('carouselModal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+function showCarouselImage(idx) {
+  if (idx < 0) idx = carouselImages.length - 1;
+  if (idx >= carouselImages.length) idx = 0;
+  carouselIndex = idx;
+
+  document.getElementById('carouselImage').src = carouselImages[idx];
+  document.getElementById('carouselCounter').textContent = `${idx + 1} / ${carouselImages.length}`;
+
+  const showNav = carouselImages.length > 1 ? 'flex' : 'none';
+  document.getElementById('carouselPrev').style.display = showNav;
+  document.getElementById('carouselNext').style.display = showNav;
 }
 
 /* ---------- CERTIFICATION ---------- */
