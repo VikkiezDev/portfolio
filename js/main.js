@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initMobileNav();
+  initNavDropdowns();
   initNavbarScroll();
   initTypewriter();
   initLeetcodeCounter();
@@ -53,6 +54,46 @@ function initMobileNav() {
       hamburger.classList.remove('open');
       hamburger.setAttribute('aria-expanded', false);
     });
+  });
+}
+
+/* ---------- NAV DROPDOWNS ---------- */
+function initNavDropdowns() {
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('open');
+
+      dropdowns.forEach(d => { d.classList.remove('open'); d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false'); });
+
+      if (!isOpen) {
+        dropdown.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    dropdown.querySelectorAll('.nav-dropdown-link').forEach(link => {
+      link.addEventListener('click', () => {
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+        document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('hamburger').classList.remove('open');
+      });
+    });
+  });
+
+  document.addEventListener('click', () => {
+    dropdowns.forEach(d => { d.classList.remove('open'); d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false'); });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(d => { d.classList.remove('open'); d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false'); });
+    }
   });
 }
 
@@ -348,13 +389,26 @@ function renderEducation() {
 /* ---------- SCROLL SPY (active nav link) ---------- */
 function initScrollSpy() {
   const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const dropdownLinks = document.querySelectorAll('.nav-dropdown-link');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+        const id = `#${entry.target.id}`;
+
+        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === id));
+
+        dropdownLinks.forEach(link => {
+          const isMatch = link.getAttribute('href') === id;
+          link.classList.toggle('active', isMatch);
+          if (isMatch) {
+            link.closest('.nav-dropdown').querySelector('.nav-dropdown-trigger').classList.add('active');
+          } else {
+            const trigger = link.closest('.nav-dropdown').querySelector('.nav-dropdown-trigger');
+            const anyActive = link.closest('.nav-dropdown-menu').querySelector('.nav-dropdown-link.active');
+            if (!anyActive) trigger.classList.remove('active');
+          }
         });
       }
     });
