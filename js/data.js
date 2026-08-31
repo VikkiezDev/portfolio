@@ -118,8 +118,9 @@ const siteData = {
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
     },
     {
-      title: "HR Employee Attrition Analysis (Currently working on)",
+      title: "HR Employee Attrition Analysis",
       category: "Data Analytics",
+      inProgress: true,
       description: "Engineered a Power BI HR attrition dashboard using SQL for data staging and star-schema modeling, Excel for driver analysis, and DAX for key workforce metrics.",
       tech: ["SQL", "Excel", "Power BI"],
       github: "",
@@ -132,6 +133,7 @@ const siteData = {
      category: "Data Engineering",
      date: "2026-08-01",       // YYYY-MM-DD — used for the "X days ago" label
      isNew: false,               // set true to show a green "New" badge
+     inProgress: false,     // set true to show a yellow "In Progress" badge
      description: "1-2 sentence summary...",
      tech: ["Tool1", "Tool2"],
      github: "https://github.com/yourusername/repo",
