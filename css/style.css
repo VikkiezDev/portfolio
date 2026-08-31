@@ -402,11 +402,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .carousel-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; padding-right: 40px; }
 
+.carousel-image {
+  max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 12px;
+  cursor: zoom-in; transition: transform 0.3s ease; transform: scale(1);
+}
+.carousel-image.zoomed {
+  cursor: zoom-out; transform: scale(1.4);
+}
 .carousel-viewport {
   position: relative; display: flex; align-items: center; justify-content: center;
-  flex: 1; min-height: 0; overflow: hidden; border-radius: 12px; background: var(--bg-alt);
+  flex: 1; min-height: 0; overflow: auto; border-radius: 12px; background: var(--bg-alt);
 }
-.carousel-image { max-width: 100%; max-height: 60vh; object-fit: contain; border-radius: 12px; }
 
 .carousel-nav {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
