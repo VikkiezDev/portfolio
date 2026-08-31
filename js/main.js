@@ -309,6 +309,12 @@ function initCarousel() {
   document.getElementById('carouselPrev').addEventListener('click', () => showCarouselImage(carouselIndex - 1));
   document.getElementById('carouselNext').addEventListener('click', () => showCarouselImage(carouselIndex + 1));
 
+  // Click/tap image to zoom in slightly; click again to revert
+  document.getElementById('carouselImage').addEventListener('click', (e) => {
+    e.stopPropagation();   // prevents this click from bubbling to the overlay and closing the modal
+    e.target.classList.toggle('zoomed');
+  });
+
   document.addEventListener('keydown', (e) => {
     const modal = document.getElementById('carouselModal');
     if (!modal.classList.contains('open')) return;
@@ -342,7 +348,10 @@ function showCarouselImage(idx) {
   if (idx >= carouselImages.length) idx = 0;
   carouselIndex = idx;
 
-  document.getElementById('carouselImage').src = carouselImages[idx];
+  const img = document.getElementById('carouselImage');
+  img.src = carouselImages[idx];
+  img.classList.remove('zoomed');   // reset zoom on every new image
+
   document.getElementById('carouselCounter').textContent = `${idx + 1} / ${carouselImages.length}`;
 
   const showNav = carouselImages.length > 1 ? 'flex' : 'none';
