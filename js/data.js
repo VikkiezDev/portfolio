@@ -80,6 +80,18 @@ const siteData = {
   // ---------------- PROJECTS ----------------
   // "category" powers the filter buttons — reuse categories to group projects.
   projects: [
+      {
+        title: "MyTrolly Sales Dashboard",
+        category: "Excel Dashboarding",
+        date: "2026-08-31",
+        isNew: true,
+        inProgress: false,
+        description: "Interactive Excel Sales Dashboard analyzing 2,000+ transactions featuring automated KPIs, monthly trend analysis, regional/channel performance breakdowns, and dynamic slicer filtering.",
+        tech: ["MS Excel", "Pivot Table", "Pivot Chart", "Github"],
+        github: "https://github.com/VikkiezDev/MyTrolly-Sales-Dashboard",
+        demo: "",
+        images: ["assets/projects/mytrolly-dashboard/sales_data_dashboard.png"]   // omit or leave [] if none
+      },
     {
       title: "Apex Global Sports Data Warehousing",
       category: "Data Warehousing",
