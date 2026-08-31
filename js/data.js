@@ -86,13 +86,15 @@ const siteData = {
       date: "2026-08-25",      // ← new: use YYYY-MM-DD format
       isNew: true, 
       description: "Built a modern data warehouse with SQL Server Management Studio, including ETL processes, data modeling, and analytics.",
-      tech: ["T-SQL", "SSMS", "Excel"],
+      tech: ["T-SQL", "SSMS", "SQL Server", "Power Bi", "Excel", "Git"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
       demo: ""   // leave "" if none
     },
     {
       title: "SaaS Vendor Health Monitoring Pipeline",
       category: "Data Engineering",
+      date: "2026-07-15",      // ← new: use YYYY-MM-DD format
+      isNew: false, 
       description: "Near-real-time SaaS dependency health monitor using AWS Lambda, EventBridge ingestion, medallion architecture with Unity Catalog, and a Power BI.",
       tech: ["AWS", "Databricks", "Unity Catalog", "PySpark", "SQL", "Power BI"],
       github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard"
@@ -100,6 +102,8 @@ const siteData = {
     {
       title: "Payment Analytics Data Warehouse",
       category: "Data Warehousing",
+      date: "2026-06-10",      // ← new: use YYYY-MM-DD format
+      isNew: false,
       description: "Production-grade payment analytics data warehouse built on Databricks + AWS S3 using medallion architecture, star schema dimensional modeling, and Delta Lake.",
       tech: ["SQL", "AWS", "Databricks", "Unity Catalog"],
       github: "https://github.com/VikkiezDev/Payment-Analytics-Data-Warehouse"
@@ -107,6 +111,8 @@ const siteData = {
     {
       title: "Netflix User Behavior & Subscription Analytics",
       category: "Data Analytics",
+      date: "2026-04-17",      // ← new: use YYYY-MM-DD format
+      isNew: false,
       description: "This project focuses on performing analytics on Netflix User Database using MySQL and Power BI",
       tech: ["MySQL", "Power BI", "Stored Procedures", "MS Excel"],
       github: "https://github.com/VikkiezDev/Netflix-User-Behavior-Subscription-Analytics"
