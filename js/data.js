@@ -88,7 +88,12 @@ const siteData = {
       description: "Built a modern data warehouse with SQL Server Management Studio, including ETL processes, data modeling, and analytics.",
       tech: ["T-SQL", "SSMS", "SQL Server", "Power Bi", "Excel", "Git"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
-      demo: ""   // leave "" if none
+      demo: "",   // leave "" if none
+      images: [
+          "assets/projects/apex-sports-warehouse/apex_page_1.jpg",
+          "assets/projects/apex-sports-warehouse/apex_page_2.jpg",
+          "assets/projects/apex-sports-warehouse/apex_page_3.jpg"
+     ]
     },
     {
       title: "SaaS Vendor Health Monitoring Pipeline",
@@ -131,13 +136,14 @@ const siteData = {
    {
      title: "Project Title",
      category: "Data Engineering",
-     date: "2026-08-01",       // YYYY-MM-DD — used for the "X days ago" label
-     isNew: false,               // set true to show a green "New" badge
-     inProgress: false,     // set true to show a yellow "In Progress" badge
+     date: "2026-08-01",
+     isNew: false,
+     inProgress: false,
      description: "1-2 sentence summary...",
      tech: ["Tool1", "Tool2"],
      github: "https://github.com/yourusername/repo",
-     demo: ""
+     demo: "",
+     images: ["assets/projects/folder-name/1.png"]   // omit or leave [] if none
    },
    */
   ],
