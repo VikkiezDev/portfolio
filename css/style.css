@@ -279,11 +279,28 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 0.85rem; font-weight: 600; color: var(--text-muted); transition: all 0.2s ease;
 }
 
-.project-badge-new {
-  position: absolute; top: 14px; right: 14px; z-index: 2;
-  background: #16a34a; color: #fff; font-size: 0.68rem; font-weight: 700;
+.project-badge-new,
+.project-badge-progress {
+  position: absolute; right: 14px; z-index: 2;
+  font-size: 0.68rem; font-weight: 700; color: #fff;
   padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.04em;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.project-badge-new {
+  top: 14px;
+  background: #16a34a;
+}
+
+.project-badge-progress {
+  top: 14px;
+  background: #eab308;
+  color: #1a1a1a;
+}
+
+.project-badge-new:has(+ .project-badge-progress),
+.project-badge-new + .project-badge-progress {
+  top: 46px;
 }
 
 .project-meta-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
