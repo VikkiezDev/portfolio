@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initMobileNav();
+  initNavDropdowns();
   initNavbarScroll();
   initTypewriter();
   initLeetcodeCounter();
@@ -62,6 +63,60 @@ function initNavbarScroll() {
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
+}
+
+/* ---------- NAV DROPDOWNS ---------- */
+function initNavDropdowns() {
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+  const navLinksContainer = document.getElementById('navLinks');
+  const hamburger = document.getElementById('hamburger');
+
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();   // stops this click from reaching the document listener below,
+                              // which would otherwise immediately re-close the dropdown we just opened
+      const isOpen = dropdown.classList.contains('open');
+
+      dropdowns.forEach(d => {
+        d.classList.remove('open');
+        d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        dropdown.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    dropdown.querySelectorAll('.nav-dropdown-link').forEach(link => {
+      link.addEventListener('click', () => {
+        dropdown.classList.remove('open');
+        trigger.setAttribute('aria-expanded', 'false');
+        navLinksContainer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+  });
+
+  // Clicking anywhere outside a dropdown closes any open dropdown
+  document.addEventListener('click', () => {
+    dropdowns.forEach(d => {
+      d.classList.remove('open');
+      d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdowns.forEach(d => {
+        d.classList.remove('open');
+        d.querySelector('.nav-dropdown-trigger').setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
 }
 
 /* ---------- TYPEWRITER EFFECT ---------- */
@@ -348,13 +403,26 @@ function renderEducation() {
 /* ---------- SCROLL SPY (active nav link) ---------- */
 function initScrollSpy() {
   const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const dropdownLinks = document.querySelectorAll('.nav-dropdown-link');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-          link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+        const id = `#${entry.target.id}`;
+
+        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === id));
+
+        dropdownLinks.forEach(link => {
+          const isMatch = link.getAttribute('href') === id;
+          link.classList.toggle('active', isMatch);
+          const trigger = link.closest('.nav-dropdown').querySelector('.nav-dropdown-trigger');
+          if (isMatch) {
+            trigger.classList.add('active');
+          } else {
+            const anyActive = link.closest('.nav-dropdown-menu').querySelector('.nav-dropdown-link.active');
+            if (!anyActive) trigger.classList.remove('active');
+          }
         });
       }
     });

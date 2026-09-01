@@ -70,11 +70,30 @@
     <nav class="nav-links" id="navLinks">
       <a href="#home" class="nav-link active">Home</a>
       <a href="#about" class="nav-link">About</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#certifications" class="nav-link">Certifications</a>
-      <a href="#education" class="nav-link">Education</a>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Portfolio
+          <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#experience" class="nav-dropdown-link">Experience</a>
+          <a href="#projects" class="nav-dropdown-link">Projects</a>
+        </div>
+      </div>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Qualifications
+          <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#skills" class="nav-dropdown-link">Skills</a>
+          <a href="#certifications" class="nav-dropdown-link">Certifications</a>
+          <a href="#education" class="nav-dropdown-link">Education</a>
+        </div>
+      </div>
+
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
@@ -184,17 +203,8 @@
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <p class="section-eyebrow reveal">Toolbox</p>
-      <h2 class="section-title reveal">Skills & Technologies</h2>
-      <div id="skillsGrid" class="skills-grid"><!-- rendered by main.js --></div>
-    </div>
-  </section>
-
   <!-- ============ EXPERIENCE ============ -->
-  <section id="experience" class="section">
+  <section id="experience" class="section section-alt">
     <div class="container">
       <p class="section-eyebrow reveal">Career Path</p>
       <h2 class="section-title reveal">Experience</h2>
@@ -203,13 +213,22 @@
   </section>
 
   <!-- ============ PROJECTS ============ -->
-  <section id="projects" class="section section-alt">
+  <section id="projects" class="section">
     <div class="container">
       <p class="section-eyebrow reveal">My Work</p>
       <h2 class="section-title reveal">Featured Projects</h2>
 
       <div id="projectFilters" class="project-filters reveal"><!-- rendered by main.js --></div>
       <div id="projectsGrid" class="projects-grid"><!-- rendered by main.js --></div>
+    </div>
+  </section>
+
+    <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow reveal">Toolbox</p>
+      <h2 class="section-title reveal">Skills & Technologies</h2>
+      <div id="skillsGrid" class="skills-grid"><!-- rendered by main.js --></div>
     </div>
   </section>
 
