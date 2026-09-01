@@ -89,7 +89,6 @@ const siteData = {
         description: "Interactive Excel Sales Dashboard analyzing 2,000+ transactions featuring automated KPIs, monthly trend analysis, regional/channel performance breakdowns, and dynamic slicer filtering.",
         tech: ["MS Excel", "Pivot Table", "Pivot Chart", "Github"],
         github: "https://github.com/VikkiezDev/MyTrolly-Sales-Dashboard",
-        demo: "",
         images: ["assets/projects/mytrolly-dashboard/sales_data_dashboard.png"]   // omit or leave [] if none
       },
     {
@@ -100,7 +99,6 @@ const siteData = {
       description: "Built a modern data warehouse with SQL Server Management Studio, including ETL processes, data modeling, and analytics.",
       tech: ["T-SQL", "SSMS", "SQL Server", "Power Bi", "Excel", "Git"],
       github: "https://github.com/VikkiezDev/Apex-Global-Sports-Data-Warehousing",
-      demo: "",   // leave "" if none
       images: [
           "assets/projects/apex-sports-warehouse/apex_page_1.jpg",
           "assets/projects/apex-sports-warehouse/apex_page_2.jpg",
@@ -114,7 +112,8 @@ const siteData = {
       isNew: false, 
       description: "Near-real-time SaaS dependency health monitor using AWS Lambda, EventBridge ingestion, medallion architecture with Unity Catalog, and a Power BI.",
       tech: ["AWS", "Databricks", "Unity Catalog", "PySpark", "SQL", "Power BI"],
-      github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard"
+      github: "https://github.com/VikkiezDev/SaaS-Dependency-Health-Dashboard",
+      images: ["assets/projects/saas_dashboard/saas_monitoring_dashboard.png"]
     },
     {
       title: "Payment Analytics Data Warehouse",
