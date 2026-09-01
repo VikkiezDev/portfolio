@@ -135,11 +135,12 @@ const siteData = {
     },
     {
       title: "HR Employee Attrition Analysis",
-      category: "Data Analytics",
+      category: "Excel Dashboard",
+      date: "",      // ← new: use YYYY-MM-DD format
       inProgress: true,
-      description: "Engineered a Power BI HR attrition dashboard using SQL for data staging and star-schema modeling, Excel for driver analysis, and DAX for key workforce metrics.",
-      tech: ["SQL", "Excel", "Power BI"],
-      github: "",
+      description: "Engineered a Power BI HR attrition dashboard using Power Query for data staging, Pivot Tables and Pivot Charts for analysis and dashboarding.",
+      tech: ["MS Excel", "Power Query", "Pivot Tables", "Pivot Charts", "Github"],
+      github: "https://github.com/VikkiezDev/HR-Employee-Attrition-Analysis",
       demo: ""   // leave "" if none
     }
 
