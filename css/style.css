@@ -73,6 +73,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   min-height: calc(100vh - 72px);   /* 72px = navbar height, matches --nav-inner height */
   display: flex;
   align-items: center;
+  scroll-margin-top: 72px;
 }
 .section > .container { width: 100%; }
 .section-alt { background: var(--bg-alt); }
